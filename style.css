@@ -475,3 +475,58 @@
   width: 60px; /* Define a largura das imagens para 20px */
   height: auto; /* Mantém a proporção das imagens */
 }
+/* Garante que todo o site fique bem no mobile */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Seção de Tecnologias */
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Card individual */
+.tecnologias .card {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100px;
+}
+
+.tecnologias .card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagens das tecnologias */
+.tecnologia-img {
+  max-width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 4px #00bfff80);
+  margin-bottom: 10px;
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 480px) {
+  .tecnologia-img {
+    max-width: 45px;
+  }
+
+  .tecnologias .card {
+    width: 90px;
+    padding: 10px;
+  }
+}
