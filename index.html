@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinicius | Desenvolvedor Full-Stack</title>
+  <link rel="icon" href="img/Capturar.PNG" type="image/png" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <h1><a href="#inicio" class="logo-link">Vinicius.Dev</a></h1>
+      </div>
+      <nav class="navbar">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#certificados">Certificados</a> <!-- Novo item no menu -->
+        <a href="#contato" class="btn-contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Olá, eu sou Vinicius 👋💻</h2>
+        <p>Desenvolvedor Full Stack • Web Designer • Criador de Chatbots</p>
+        <a href="#contato" class="btn">Conheça meu trabalho</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou Vinicius, Desenvolvedor Full-Stack com foco em performance, design e inovação.
+          Atuo na criação de sites modernos, sistemas personalizados e chatbots inteligentes que ajudam empresas a se destacarem no ambiente digital. Ao longo da minha trajetória, já desenvolvi soluções para negócios de diferentes áreas, como educação, advocacia, comércio e tecnologia, sempre buscando unir estética profissional com funcionalidade e usabilidade.
+          
+          Participei de projetos que vão desde portfólios profissionais e lojas virtuais até plataformas completas de cursos online e sistemas internos de gestão. Tenho experiência colaborando com empreendedores, pequenas empresas e agências, entendendo suas necessidades e transformando ideias em soluções práticas que geram valor real.
+          
+          Mais do que escrever códigos, meu trabalho é resolver problemas, melhorar a experiência do usuário e entregar resultados. Se você procura alguém comprometido, criativo e confiável para dar vida ao seu projeto digital, fale comigo.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>💻 Desenvolvimento Web</h3>
+            <p>Criação de sites modernos, responsivos e com alta performance.</p>
+          </div>
+          <div class="card">
+            <h3>🤖 Chatbots Inteligentes</h3>
+            <p>Automatize seu atendimento com bots personalizados.</p>
+          </div>
+          <div class="card">
+            <h3>🧠 Sistemas Personalizados</h3>
+            <p>Soluções sob medida para as necessidades da sua empresa.</p>
+          </div>
+          <div class="card">
+            <h3>🎨 Design Gráfico</h3>
+            <p>Identidade visual marcante com foco na experiência do usuário.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <div class="container">
+        <h2 class="titulo-secao">Projetos</h2>
+        <p class="subtitulo">Explorando soluções criativas e funcionais em diversas áreas</p>
+        
+        <div class="cards">
+          <div class="card">
+            <h3>Design Gráfico</h3>
+            <p>Identidades visuais e artes com foco na estética e estratégia.</p>
+            <a href="design-grafico.html" class="btn-projeto">Ver mais</a>
+          </div>
+    
+          <div class="card">
+            <h3>Web Apps</h3>
+            <p>Sistemas modernos com foco em performance, usabilidade e responsividade.</p>
+            <a href="webapps.html" class="btn-projeto">Ver mais</a>
+          </div>
+    
+          <div class="card">
+            <h3>Chatbots</h3>
+            <p>Bots personalizados que automatizam o atendimento e captam leads.</p>
+            <a href="chatbots.html" class="btn-projeto">Ver mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificados" class="certificados">
+      <div class="container">
+        <h2>Certificados</h2>
+        <p>Veja meus certificados em várias áreas de desenvolvimento e tecnologia.</p>
+        <a href="https://www.instagram.com/stories/highlights/18287949712218386/" class="btn">Ver Certificados</a> <!-- Link para a página com seus certificados -->
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Fale Comigo</h2>
+        <form action="https://formsubmit.co/viniciusextreme2299@gmail.com" method="POST">
+          <!-- Campos ocultos -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://viniciusalcoliveira.github.io/portifolioweb/#contato">
+
+          <!-- Campos do formulário -->
+          <input type="text" name="meu_nome" placeholder="Seu nome" required />
+          <input type="email" name="meu_email" placeholder="Seu e-mail" required />
+          <input 
+            type="tel" 
+            name="meu_telefone" 
+            placeholder="Seu telefone" 
+            required 
+            pattern="[0-9]{10,15}" 
+            title="Digite apenas números, entre 10 e 15 dígitos" 
+            inputmode="numeric"
+          />
+          <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>        
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ViniciusDev. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vinicius-oliveira-webdesigner/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/vinicius.webdesigner/" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5598984807189?text=Ol%C3%A1%2C+Vinicius%21+Gostaria+de+fazer+um+or%C3%A7amento+para+meu+projeto." target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão do Chatbot -->
+  <button id="toggle-chatbot" style="position: fixed; bottom: 20px; right: 20px; background-color: #00bfff; color: white; border: none; border-radius: 50%; padding: 10px; font-size: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); z-index: 10000;">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+
+  <!-- Chatbot -->
+  <iframe 
+    id="chatbot-iframe"
+    src="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/08/01/20250408013949-IJ2TJSY7.json"
+    style="position: fixed; bottom: 80px; right: 20px; width: 300px; height: 360px; border: none; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); z-index: 9999;" 
+    allow="clipboard-write; microphone;"
+    hidden
+  ></iframe>
+
+  <script>
+    const chatbotIframe = document.getElementById('chatbot-iframe');
+    const toggleButton = document.getElementById('toggle-chatbot');
+
+    toggleButton.addEventListener('click', () => {
+      if (chatbotIframe.hidden) {
+        chatbotIframe.hidden = false;
+        toggleButton.innerHTML = '<i class="fas fa-times"></i>';
+      } else {
+        chatbotIframe.hidden = true;
+        toggleButton.innerHTML = '<i class="fas fa-comment-dots"></i>';
+      }
+    });
+  </script>
+
+</body>
+</html>
