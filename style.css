@@ -463,3 +463,17 @@ button:hover {
     max-width: 40px;
   }
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* Garante que o cabeçalho fique acima do conteúdo */
+  background-color: #333; /* Ou qualquer cor de fundo */
+  transition: top 0.3s ease;
+}
+@media (max-width: 768px) {
+  .header {
+    position: relative; /* Cabeçalho não fixo em dispositivos móveis */
+  }
+}
