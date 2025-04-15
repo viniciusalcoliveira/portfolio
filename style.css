@@ -475,3 +475,23 @@
   width: 60px; /* Define a largura das imagens para 20px */
   height: auto; /* Mantém a proporção das imagens */
 }
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.tecnologias img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 4px #00bfff80);
+}
+
+.tecnologias img:hover {
+  transform: scale(1.1);
+}
