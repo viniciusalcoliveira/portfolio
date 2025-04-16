@@ -1,268 +1,181 @@
-/* RESET E CONFIG GERAL */
+:root {
+  --bg-color: #0d1117;
+  --primary-color: #00bfff;
+  --text-color: #f5f5f5;
+  --card-bg: #1a1a1a;
+  --card-hover: #2a2a2a;
+  --shadow-color: rgba(0, 191, 255, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
+  transition: all 0.3s ease;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #0d1117;
-  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
-/* CONTAINER CENTRALIZADO */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* HEADER */
-.header {
-  background-color: #0d1117;
-  padding: 20px 0;
-  border-bottom: 1px solid #222;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logo-link {
-  color: #00bfff;
+a {
+  color: var(--primary-color);
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: bold;
 }
 
-.navbar {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+a:hover {
+  text-decoration: underline;
 }
 
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  margin-bottom: 0.5em;
 }
 
-.navbar a:hover,
-.btn-contato {
-  color: #00bfff;
+h2 span {
+  color: var(--primary-color);
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(180deg, #0d1117, #161b22);
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #00bfff;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.btn {
-  padding: 12px 24px;
-  background-color: #00bfff;
-  color: #0d1117;
+/* Botões */
+button, .btn {
+  background-color: var(--primary-color);
+  color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #0099cc;
+button:hover, .btn:hover {
+  background-color: #0095cc;
 }
 
-/* SEÇÕES */
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00bfff;
+button:focus, a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-section p {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 40px;
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* SOBRE */
-.sobre p {
-  text-align: justify;
-}
-
-/* TECNOLOGIAS */
-.tecnologias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.tecnologias .card {
-  background-color: #161b22;
-  padding: 20px;
+/* Cards */
+.card, .projeto-card, .chatbot-card {
+  background-color: var(--card-bg);
   border-radius: 16px;
-  text-align: center;
-  width: 150px;
+  box-shadow: 0 0 15px var(--shadow-color);
+  padding: 2rem;
+  margin: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.tecnologia-img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-  object-fit: contain;
+.card:hover, .projeto-card:hover, .chatbot-card:hover {
+  background-color: var(--card-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--primary-color);
 }
 
-/* SERVIÇOS E PROJETOS */
-.cards {
+/* Galeria de imagens */
+.galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.galeria img {
   width: 100%;
-  justify-items: center;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+  transition: transform 0.3s ease;
 }
 
-.card {
-  background-color: #161b22;
-  padding: 25px;
-  border-radius: 16px;
-  text-align: center;
-  transition: transform 0.3s;
+.galeria img:hover {
+  transform: scale(1.05);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.btn-projeto {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: transparent;
-  border: 1px solid #00bfff;
-  color: #00bfff;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-projeto:hover {
-  background-color: #00bfff;
-  color: #0d1117;
-}
-
-/* CONTATO */
+/* Formulário */
 form {
-  width: 100%;
-  max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
 }
 
 input, textarea {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 10px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #444;
   background-color: #161b22;
-  color: #ffffff;
+  color: #fff;
 }
 
-textarea {
-  resize: vertical;
-  height: 120px;
+input:focus, textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
 }
 
-button[type="submit"] {
-  background-color: #00bfff;
-  color: #0d1117;
-  padding: 12px;
+/* Chatbot */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.chatbot-container iframe {
+  width: 300px;
+  height: 400px;
   border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 0 20px var(--shadow-color);
 }
 
-button[type="submit"]:hover {
-  background-color: #0099cc;
-}
-
-/* FOOTER */
-.footer {
-  padding: 40px 20px;
-  background-color: #0d1117;
-  border-top: 1px solid #222;
+/* Rodapé */
+footer {
+  background-color: #0b0f14;
   text-align: center;
+  padding: 30px 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
 }
 
-.footer p {
-  margin-bottom: 10px;
-}
-
-.social-icons a {
-  color: #ffffff;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #00bfff;
-}
-
-/* RESPONSIVO */
+/* Responsivo */
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    gap: 20px;
+  section {
+    padding: 40px 10px;
   }
 
-  .hero h2 {
+  h1 {
     font-size: 2rem;
   }
 
-  .tecnologias {
-    justify-content: center;
+  h2 {
+    font-size: 1.8rem;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
+  .card, .projeto-card, .chatbot-card {
+    padding: 1.5rem;
+  }
+
+  .chatbot-container iframe {
+    width: 260px;
+    height: 360px;
   }
 }
