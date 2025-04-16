@@ -1,382 +1,201 @@
-/* Resetando estilos padrões */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Definições Globais */
-body {
-  background-color: #0d1117;
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Cabeçalho */
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seu Site</title>
-  <link rel="stylesheet" href="css/estilos.css"> <!-- Certifique-se de colocar o caminho correto -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinicius | Desenvolvedor Full-Stack</title>
+  <link rel="icon" href="img/Capturar.PNG" type="image/png" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <h1><a href="#inicio" class="logo-link">Vinicius.Dev</a></h1>
+      </div>
+      <nav class="navbar">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contato" class="btn-contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-.header {
-  background-color: #181b21;
-  padding: 20px 0;
-  border-bottom: 2px solid #00bfff;
-}
-<link rel="stylesheet" href="caminho/para/seu/arquivo.css">
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Olá, eu sou Vinicius 👋💻</h2>
+        <p>Desenvolvedor Full Stack • Web Designer • Criador de Chatbots</p>
+        <a href="#projetos" class="btn">Conheça meu trabalho</a>
+      </div>
+    </section>
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou Vinicius, Desenvolvedor Full-Stack com foco em performance, design e inovação.
+          Atuo na criação de sites modernos, sistemas personalizados e chatbots inteligentes que ajudam empresas a se destacarem no ambiente digital. Ao longo da minha trajetória, já desenvolvi soluções para negócios de diferentes áreas, como educação, advocacia, comércio e tecnologia, sempre buscando unir estética profissional com funcionalidade e usabilidade.
+          <br /><br />
+          Mais do que escrever códigos, meu trabalho é resolver problemas, melhorar a experiência do usuário e entregar resultados. Se você procura alguém comprometido, criativo e confiável para dar vida ao seu projeto digital, fale comigo.
+        </p>
+        
+       
+        <h3>Minhas Tecnologias</h3>
+        <div class="tecnologias">
+          <div class="card">
+            <img src="img/baixados.jpeg" alt="HTML5" class="tecnologia-img">
+            <h4>HTML5</h4>
+          </div>
+          <div class="card">
+            <img src="img/css.jpeg" alt="CSS" class="tecnologia-img">
+            <h4>CSS3</h4>
+          </div>
+          <div class="card">
+            <img src="img/baixados (12).jpeg" alt="JavaScript" class="tecnologia-img">
+            <h4>JavaScript</h4>
+          </div>
+          <div class="card">
+            <img src="img/Blender-Symbol.png"Blender" class="tecnologia-img">
+            <h4>Blender</h4>
+          </div>
+          <div class="card">
+            <img src="img/php.jpeg" alt="PHP" class="tecnologia-img">
+            <h4>PHP</h4>
+          </div>
+          <div class="card">
+            <img src="img/mysql.jpeg" alt="MySQL" class="tecnologia-img">
+            <h4>MySQL</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
 
-.header .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>💻 Desenvolvimento Web</h3>
+            <p>Criação de sites modernos, responsivos e com alta performance.</p>
+          </div>
+          <div class="card">
+            <h3>🤖 Chatbots Inteligentes</h3>
+            <p>Automatize seu atendimento com bots personalizados.</p>
+          </div>
+          <div class="card">
+            <h3>🧠 Sistemas Personalizados</h3>
+            <p>Soluções sob medida para as necessidades da sua empresa.</p>
+          </div>
+          <div class="card">
+            <h3>🎨 Design Gráfico</h3>
+            <p>Identidade visual marcante com foco na experiência do usuário.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.logo h1 a {
-  color: #00bfff;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 700;
-}
+    <section class="projetos" id="projetos">
+      <div class="container">
+        <h2 class="titulo-secao">Projetos</h2>
+        <p class="subtitulo">Explorando soluções criativas e funcionais em diversas áreas</p>
+        
+        <div class="cards">
+          <div class="card">
+            <h3>Design Gráfico</h3>
+            <p>Identidades visuais e artes com foco na estética e estratégia.</p>
+            <a href="design-grafico.html" class="btn-projeto">Ver mais</a>
+          </div>
 
-.navbar a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+          <div class="card">
+            <h3>Web Apps</h3>
+            <p>Sistemas modernos com foco em performance, usabilidade e responsividade.</p>
+            <a href="webapps.html" class="btn-projeto">Ver mais</a>
+          </div>
 
-.navbar a:hover {
-  color: #00bfff;
-}
+          <div class="card">
+            <h3>Chatbots</h3>
+            <p>Bots personalizados que automatizam o atendimento e captam leads.</p>
+            <a href="chatbots.html" class="btn-projeto">Ver mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.btn-contato {
-  background-color: #00bfff;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-weight: 500;
-  color: #0d1117;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+    <section id="certificados" class="certificados">
+      <div class="container">
+        <h2>Certificados</h2>
+        <p>Veja meus certificados em várias áreas de desenvolvimento e tecnologia.</p>
+        <a href="https://www.instagram.com/stories/highlights/18287949712218386/" class="btn" target="_blank">Ver Certificados</a>
+      </div>
+    </section>
 
-.btn-contato:hover {
-  background-color: #ff5c8f;
-}
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Fale Comigo</h2>
+        <form id="form-contato" action="https://formsubmit.co/viniciusextreme2299@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://viniciusalcoliveira.github.io/portfolio/#inicio">
 
-/* Hero Section */
-.hero {
-  background: url('img/hero-bg.jpg') no-repeat center center/cover;
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-}
+          <input type="text" name="meu_nome" placeholder="Seu nome" required />
+          <input type="email" name="meu_email" placeholder="Seu e-mail" required />
+          <input 
+            type="tel" 
+            name="meu_telefone" 
+            placeholder="Seu telefone" 
+            required 
+            pattern="[0-9\s\-\+]{10,15}" 
+            title="Digite entre 10 a 15 números, com ou sem traços" 
+            inputmode="numeric"
+          />
+          <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagem-confirmacao" style="display: none; text-align: center; padding: 20px; background-color: #00bfff; color: white; border-radius: 8px; margin-top: 20px;">
+          <h3>Mensagem enviada! Em breve entro em contato 🚀</h3>
+          <p>Obrigado pela preferência!</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.hero h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ViniciusDev. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vinicius-oliveira-webdesigner/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/vinicius.webdesigner/" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5598984807189?text=Ol%C3%A1%2C+Vinicius%21+Gostaria+de+fazer+um+or%C3%A7amento+para+meu+projeto." target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+  <script>
+    const form = document.getElementById('form-contato');
+    const mensagemConfirmacao = document.getElementById('mensagem-confirmacao');
 
-.btn {
-  background-color: #00bfff;
-  color: #0d1117;
-  padding: 12px 30px;
-  border-radius: 25px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede o envio normal do formulário
 
-.btn:hover {
-  background-color: #ff5c8f;
-}
-
-/* Sobre Mim */
-.sobre {
-  padding: 60px 0;
-  background-color: #1e2128;
-}
-
-.sobre h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.sobre p {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.tecnologias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.card {
-  background-color: #2a2f37;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 30%;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.tecnologia-img {
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.card h4 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #00bfff;
-}
-
-/* Serviços */
-.servicos {
-  background-color: #1e2128;
-  padding: 60px 0;
-}
-
-.servicos h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.card {
-  background-color: #2a2f37;
-  border-radius: 10px;
-  padding: 30px;
-  width: 23%;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 16px;
-}
-
-/* Projetos */
-.projetos {
-  padding: 60px 0;
-  background-color: #181b21;
-}
-
-.projetos h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.projetos p {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.card {
-  background-color: #2a2f37;
-  border-radius: 10px;
-  padding: 30px;
-  width: 30%;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 16px;
-}
-
-.btn-projeto {
-  display: inline-block;
-  background-color: #00bfff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: #0d1117;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 15px;
-}
-
-.btn-projeto:hover {
-  background-color: #ff5c8f;
-}
-
-/* Certificados */
-.certificados {
-  padding: 60px 0;
-  background-color: #1e2128;
-}
-
-.certificados h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.certificados p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #00bfff;
-  padding: 12px 30px;
-  border-radius: 25px;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #ff5c8f;
-}
-
-/* Contato */
-.contato {
-  background-color: #181b21;
-  padding: 60px 0;
-}
-
-.contato h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-input, textarea {
-  background-color: #2a2f37;
-  border: none;
-  padding: 15px;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #00bfff;
-  padding: 12px 30px;
-  border-radius: 25px;
-  font-size: 18px;
-  color: #0d1117;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #ff5c8f;
-}
-
-/* Rodapé */
-.footer {
-  background-color: #181b21;
-  padding: 20px 0;
-  text-align: center;
-  color: #aaa;
-}
-
-.footer p {
-  font-size: 14px;
-}
-
-.social-icons a {
-  color: #00bfff;
-  margin: 0 10px;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #ff5c8f;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .header .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar a {
-    margin: 10px 0;
-  }
-
-  .cards {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .social-icons a {
-    font-size: 18px;
-  }
-
-  .btn {
-    padding: 12px 25px;
-    font-size: 16px;
-  }
-}
+      // Simula o envio do formulário e exibe a mensagem de sucesso
+      setTimeout(function() {
+        form.reset(); // Limpa o formulário
+        mensagemConfirmacao.style.display = 'block'; // Exibe a mensagem
+      }, 500); // Simula o atraso do envio
+    });
+  </script>
+</body>
+</html>
