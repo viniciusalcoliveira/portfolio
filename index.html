@@ -197,5 +197,27 @@
       }, 500); // Simula o atraso do envio
     });
   </script>
+
+<!-- Chatbot Botpress -->
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+    botId: "SEU_BOT_ID", // substitua pelo ID do seu bot
+    hostUrl: "https://cdn.botpress.cloud/webchat/v0",
+    messagingUrl: "https://messaging.botpress.cloud",
+    botName: "Dani",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/4712/4712107.png", // ou o seu personalizado
+    backgroundColor: "#0d1117",
+    textColorOnGradient: "#ffffff",
+    enableConversationDeletion: true,
+    showCloseButton: true,
+    layoutWidth: "300px",
+    hideWidget: false,
+    showPoweredBy: false,
+    stylesheet: "https://viniciusalcoliveira.github.io/portfolio/style.css"
+  });
+</script>
+
 </body>
 </html>
+
