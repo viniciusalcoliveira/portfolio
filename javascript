@@ -21,3 +21,17 @@
     },
   });
 </script>
+// Abrir e fechar a janela do chatbot
+const widget = document.querySelector('.bpw-widget');
+const launcher = document.querySelector('.bpw-launcher');
+const closeBtn = document.querySelector('.bpw-widget-close');
+
+launcher.addEventListener('click', () => {
+    widget.classList.toggle('open');
+    widget.classList.toggle('closed');
+});
+
+closeBtn.addEventListener('click', () => {
+    widget.classList.remove('open');
+    widget.classList.add('closed');
+});
