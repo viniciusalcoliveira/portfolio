@@ -34,47 +34,47 @@
         <p>Desenvolvedor Full Stack • Web Designer • Criador de Chatbots</p>
         <a href="#projetos" class="btn">Conheça meu trabalho</a>
       </div>
-  <section id="sobre" class="sobre">
-  <div class="container">
-    <h2>Sobre Mim</h2>
-    <p>
-      Sou Vinicius, Desenvolvedor Full-Stack com foco em performance, design e inovação.
-      Atuo na criação de sites modernos, sistemas personalizados e chatbots inteligentes que ajudam empresas a se destacarem no ambiente digital.
-      Ao longo da minha trajetória, já desenvolvi soluções para negócios de diferentes áreas, como educação, advocacia, comércio e tecnologia, sempre buscando unir estética profissional com funcionalidade e usabilidade.
-      <br /><br />
-      Mais do que escrever códigos, meu trabalho é resolver problemas, melhorar a experiência do usuário e entregar resultados. Se você procura alguém comprometido, criativo e confiável para dar vida ao seu projeto digital, fale comigo.
-    </p>
+    </section>
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <p>
+        Sou Vinicius, Desenvolvedor Full-Stack com foco em performance, design e inovação. Atuo na criação de sites modernos, sistemas personalizados e chatbots inteligentes que ajudam empresas a se destacarem no ambiente digital. Ao longo da minha trajetória, já desenvolvi soluções para negócios de diferentes áreas, como educação, advocacia, comércio e tecnologia, sempre buscando unir estética profissional com funcionalidade e usabilidade.
 
-    <h3>Minhas Tecnologias</h3>
-    <div class="tecnologias">
-      <div class="card">
-        <img src="img/baixados.jpeg" alt="HTML5" class="tecnologia-img">
-        <h4>HTML5</h4>
+Mais do que escrever códigos, meu trabalho é resolver problemas, melhorar a experiência do usuário e entregar resultados. Se você procura alguém comprometido, criativo e confiável para dar vida ao seu projeto digital, fale comigo.  
+     
+        </p>
+        
+       
+        <h3>Minhas Tecnologias</h3>
+        <div class="tecnologias">
+          <div class="card">
+            <img src="img/baixados.jpeg" alt="HTML5" class="tecnologia-img">
+            <h4>HTML5</h4>
+          </div>
+          <div class="card">
+            <img src="img/css.jpeg" alt="CSS" class="tecnologia-img">
+            <h4>CSS</h4>
+          </div>
+          <div class="card">
+            <img src="img/baixados (12).jpeg" alt="JavaScript" class="tecnologia-img">
+            <h4>JavaScript</h4>
+          </div>
+          <div class="card">
+            <img src="img/Blender-Symbol.png"Blender" class="tecnologia-img">
+            <h4>Blender</h4>
+          </div>
+          <div class="card">
+            <img src="img/php.jpeg" alt="PHP" class="tecnologia-img">
+            <h4>PHP</h4>
+          </div>
+          <div class="card">
+            <img src="img/mysql.jpeg" alt="MySQL" class="tecnologia-img">
+            <h4>MySQL</h4>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/css.jpeg" alt="CSS3" class="tecnologia-img">
-        <h4>CSS</h4>
-      </div>
-      <div class="card">
-        <img src="img/baixados (12).jpeg" alt="JavaScript" class="tecnologia-img">
-        <h4>JavaScript</h4>
-      </div>
-      <div class="card">
-        <img src="img/Blender-Symbol.png" alt="Blender" class="tecnologia-img">
-        <h4>Blender</h4>
-      </div>
-      <div class="card">
-        <img src="img/php.jpeg" alt="PHP" class="tecnologia-img">
-        <h4>PHP</h4>
-      </div>
-      <div class="card">
-        <img src="img/mysql.jpeg" alt="MySQL" class="tecnologia-img">
-        <h4>MySQL</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
     
     
 
@@ -137,7 +137,7 @@
       </div>
     </section>
 
- <section id="contato" class="contato">
+    <section id="contato" class="contato">
       <div class="container">
         <h2>Fale Comigo</h2>
         <form id="form-contato" action="https://formsubmit.co/viniciusextreme2299@gmail.com" method="POST">
@@ -164,59 +164,6 @@
         </div>
       </div>
     </section>
-
-<script>
-  window.botpressWebChat.init({
-    botId: "Dani", 
-    hostUrl: "https://cdn.botpress.cloud/webchat/v0",
-    messagingUrl: "https://messaging.botpress.cloud",
-    botName: "Dani",
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/4712/4712107.png",
-    backgroundColor: "#0d1117",
-    textColorOnGradient: "#ffffff",
-    enableConversationDeletion: true,
-    showCloseButton: true,
-    layoutWidth: "250px",  <!-- Diminuímos para 250px -->
-    layoutHeight: "350px", <!-- Diminuímos para 350px -->
-    hideWidget: false,
-    showPoweredBy: false,
-    stylesheet: "https://viniciusalcoliveira.github.io/portfolio/style.css"
-  });
-</script>
-
-
-
-<script>
-  document.getElementById("form-contato").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const form = e.target;
-
-    fetch("https://formsubmit.co/ajax/viniciusextreme2299@gmail.com", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        meu_nome: form.meu_nome.value,
-        meu_email: form.meu_email.value,
-        meu_telefone: form.meu_telefone.value,
-        mensagem: form.mensagem.value
-      })
-    })
-    .then(response => {
-      if (response.ok) {
-        form.reset();
-        document.getElementById("mensagem-confirmacao").style.display = "block";
-      } else {
-        alert("Erro ao enviar. Tente novamente mais tarde.");
-      }
-    })
-    .catch(error => {
-      console.error("Erro:", error);
-      alert("Erro ao enviar. Tente novamente mais tarde.");
-    });
-  });
-</script>
-
   </main>
 
   <footer class="footer">
@@ -250,27 +197,5 @@
       }, 500); // Simula o atraso do envio
     });
   </script>
-
-<!-- Chatbot Botpress -->
-<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-    botId: "Dani", // 
-    hostUrl: "https://cdn.botpress.cloud/webchat/v0",
-    messagingUrl: "https://messaging.botpress.cloud",
-    botName: "Dani",
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/4712/4712107.png", 
-    backgroundColor: "#0d1117",
-    textColorOnGradient: "#ffffff",
-    enableConversationDeletion: true,
-    showCloseButton: true,
-    layoutWidth: "300px",
-    hideWidget: false,
-    showPoweredBy: false,
-    stylesheet: "https://viniciusalcoliveira.github.io/portfolio/style.css"
-  });
-</script>
-
 </body>
 </html>
-
