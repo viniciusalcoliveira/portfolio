@@ -409,143 +409,57 @@ button:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Ajustar o tamanho da janela do chatbot */
+/* Ajustes da janela do chatbot */
 .bpw-widget {
-    width: 220px; /* Reduz a largura da janela */
-    height: 240px; /* Reduz a altura da janela */
+    width: 260px;  /* Ajuste na largura */
+    height: 300px; /* Ajuste na altura */
     max-width: 100%; /* Impede que a janela ultrapasse a tela */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Ajustar o botão do chatbot */
+/* Estilo do botão de lançamento */
 .bpw-launcher {
-    width: 50px; /* Diminuir o tamanho do botão */
-    height: 50px; /* Ajustar altura do botão */
-    background-color: #00bfff; /* Cor personalizada para o botão */
-    border-radius: 50%; /* Tornar o botão redondo */
-    bottom: 20px; /* Ajustar a posição do botão */
-    right: 20px; /* Ajustar a posição do botão */
-}
-
-.social-icons a i {
-    font-size: 40px; /* Aumenta o tamanho dos ícones */
-    transition: transform 0.3s ease-in-out, color 0.3s ease; /* Efeito suave para o hover */
-}
-
-.social-icons a i:hover {
-    transform: scale(1.1); /* Efeito de zoom */
-    color: #00bfff; /* Muda a cor no hover */
-}
-
-
-
-
-
-/* SEÇÃO SOBRE */
-.sobre {
-  padding: 40px 0;
-}
-
-.sobre h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.sobre p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.sobre h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.tecnologias {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  width: 150px;
-  flex-shrink: 0;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.tecnologia-img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .sobre p {
-    font-size: 1rem;
-  }
-
-  .sobre h3 {
-    font-size: 1.2rem;
-  }
-
-  .card {
-    width: 120px;
-    padding: 15px;
-  }
-
-  .tecnologia-img {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .sobre {
-    padding: 20px 0;
-  }
-
-  .sobre h2 {
-    font-size: 1.5rem;
-  }
-
-  .sobre p {
-    font-size: 0.9rem;
-  }
-
-  .card {
-    width: 100px;
-    padding: 10px;
-  }
-
-  .tecnologia-img {
-    width: 60px;
+    width: 60px; /* Ajuste do tamanho do botão */
     height: 60px;
-  }
+    background-color: #00bfff;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
-/* Integrando com o código já existente */
-
-/* Restante do CSS existente */
-
-/* Ajustes do Layout e Seções */
-.sobre p,
-.projetos p {
-    max-width: 700px;
-    margin: 0 auto;
-    color: #c9d1d9;
+/* Efeito hover para o botão do chatbot */
+.bpw-launcher:hover {
+    background-color: #0099cc;
+    transform: scale(1.1); /* Leve aumento no botão */
 }
 
-/* Estilos para outras partes do código */
-...
+/* Animação da janela ao abrir */
+.bpw-widget.open {
+    transform: translateX(0); /* Janela visível */
+}
+
+/* Animação da janela ao fechar */
+.bpw-widget.closed {
+    transform: translateX(100%); /* Janela escondida à direita */
+}
+
+/* Estilos do botão de fechar */
+.bpw-widget-close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: color 0.3s;
+}
+
+.bpw-widget-close:hover {
+    color: #00bfff;
+}
