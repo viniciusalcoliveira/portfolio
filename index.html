@@ -137,33 +137,67 @@
       </div>
     </section>
 
-    <section id="contato" class="contato">
-      <div class="container">
-        <h2>Fale Comigo</h2>
-        <form id="form-contato" action="https://formsubmit.co/viniciusextreme2299@gmail.com" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://viniciusalcoliveira.github.io/portfolio/#inicio">
+   <section id="contato" class="contato">
+  <div class="container">
+    <h2>Fale Comigo</h2>
+    <form id="form-contato" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
 
-          <input type="text" name="meu_nome" placeholder="Seu nome" required />
-          <input type="email" name="meu_email" placeholder="Seu e-mail" required />
-          <input 
-            type="tel" 
-            name="meu_telefone" 
-            placeholder="Seu telefone" 
-            required 
-            pattern="[0-9\s\-\+]{10,15}" 
-            title="Digite entre 10 a 15 números, com ou sem traços" 
-            inputmode="numeric"
-          />
-          <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-        <div id="mensagem-confirmacao" style="display: none; text-align: center; padding: 20px; background-color: #00bfff; color: white; border-radius: 8px; margin-top: 20px;">
-          <h3>Mensagem enviada! Em breve entro em contato 🚀</h3>
-          <p>Obrigado pela preferência!</p>
-        </div>
-      </div>
-    </section>
+      <input type="text" name="meu_nome" placeholder="Seu nome" required />
+      <input type="email" name="meu_email" placeholder="Seu e-mail" required />
+      <input 
+        type="tel" 
+        name="meu_telefone" 
+        placeholder="Seu telefone" 
+        required 
+        pattern="[0-9\s\-\+]{10,15}" 
+        title="Digite entre 10 a 15 números, com ou sem traços" 
+        inputmode="numeric"
+      />
+      <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="mensagem-confirmacao" style="display: none; text-align: center; padding: 20px; background-color: #00bfff; color: white; border-radius: 8px; margin-top: 20px;">
+      <h3>Mensagem enviada! Em breve entro em contato 🚀</h3>
+      <p>Obrigado pela preferência!</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById("form-contato").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+
+    fetch("https://formsubmit.co/ajax/viniciusextreme2299@gmail.com", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        meu_nome: form.meu_nome.value,
+        meu_email: form.meu_email.value,
+        meu_telefone: form.meu_telefone.value,
+        mensagem: form.mensagem.value
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        document.getElementById("mensagem-confirmacao").style.display = "block";
+      } else {
+        alert("Erro ao enviar. Tente novamente mais tarde.");
+      }
+    })
+    .catch(error => {
+      console.error("Erro:", error);
+      alert("Erro ao enviar. Tente novamente mais tarde.");
+    });
+  });
+</script>
+
   </main>
 
   <footer class="footer">
@@ -202,11 +236,11 @@
 <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
 <script>
   window.botpressWebChat.init({
-    botId: "SEU_BOT_ID", // substitua pelo ID do seu bot
+    botId: "Dani", // 
     hostUrl: "https://cdn.botpress.cloud/webchat/v0",
     messagingUrl: "https://messaging.botpress.cloud",
     botName: "Dani",
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/4712/4712107.png", // ou o seu personalizado
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/4712/4712107.png", 
     backgroundColor: "#0d1117",
     textColorOnGradient: "#ffffff",
     enableConversationDeletion: true,
