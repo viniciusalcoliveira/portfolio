@@ -538,8 +538,8 @@
 }
 /* Ajustar o tamanho da janela do chatbot */
 .bpw-widget {
-  width: 300px; /* Reduz a largura da janela */
-  height: 400px; /* Reduz a altura da janela */
+  width: 220px; /* Reduz a largura da janela */
+  height: 240px; /* Reduz a altura da janela */
   max-width: 100%; /* Impede que a janela ultrapasse a tela */
 }
 
@@ -552,3 +552,4 @@
   bottom: 20px; /* Ajustar a posição do botão */
   right: 20px; /* Ajustar a posição do botão */
 }
+
