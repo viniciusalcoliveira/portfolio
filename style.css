@@ -536,3 +536,19 @@
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
+/* Ajustar o tamanho da janela do chatbot */
+.bpw-widget {
+  width: 300px; /* Reduz a largura da janela */
+  height: 400px; /* Reduz a altura da janela */
+  max-width: 100%; /* Impede que a janela ultrapasse a tela */
+}
+
+/* Ajustar o botão do chatbot */
+.bpw-launcher {
+  width: 50px; /* Diminuir o tamanho do botão */
+  height: 50px; /* Ajustar altura do botão */
+  background-color: #00bfff; /* Cor personalizada para o botão */
+  border-radius: 50%; /* Tornar o botão redondo */
+  bottom: 20px; /* Ajustar a posição do botão */
+  right: 20px; /* Ajustar a posição do botão */
+}
